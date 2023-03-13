@@ -44,7 +44,7 @@ ul {
     transition-timing-function: ease-out;
     transform: rotate3d(0);
     box-shadow: 0 1px 25px #00000099;
-    height: 250px
+    height: 180px
 }
 
 .card-title {
@@ -77,11 +77,6 @@ ul {
     background-color: #0062cc;
 }
 
-.card-footer {
-    position: fixed;
-    margin-top: 25px;
-}
-
 .card-footer-name {
     font-weight: bold;
     margin-right: 5px;
@@ -109,14 +104,6 @@ a {
     margin: 1rem 0 60px;
 }
 
-.start,
-.open_source,
-.faq,
-.progression {
-    flex-basis: 100%;
-    margin: 0 20% 0 20%;
-}
-
 .start h1,
 .open_source h1,
 .faq h1 {
@@ -130,11 +117,11 @@ a {
 }
 
 .progression {
-    margin-top:60px;
+    margin-top: 60px;
 }
 
 .progression h3 {
-    font-weight:400;
+    font-weight: 400;
 }
 
 .progress-bar {
@@ -153,11 +140,11 @@ a {
 
 @keyframes prog {
     from {
-        width:0;
+        width: 0;
     }
 
     to {
-        width:75%;
+        width: 75%;
     }
 }
 
@@ -168,4 +155,24 @@ footer {
 
 i {
     color: rgb(251, 61, 61);
+}
+
+@media only screen and (max-width: 1000px) {
+    .start,
+    .open_source,
+    .faq,
+    .progression {
+        flex-basis: 100%;
+        margin: 0 5% 0 5%;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .start,
+    .open_source,
+    .faq,
+    .progression {
+        flex-basis: 100%;
+        margin: 0 20% 0 20%;
+    }
 }
